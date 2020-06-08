@@ -27,9 +27,9 @@ services:
       RABBIT_HOST: "rabbit"
       RABBIT_PORT: "5672"
 
-  trips:
+  bookings-gateway:
     build:
-      context: trips
+      context: bookings-gateway
     depends_on:
       - rabbit
     environment:
