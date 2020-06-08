@@ -22,7 +22,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # copy config, run.sh and hotel-gateway
 COPY config.yml ./
 COPY run.sh ./
-COPY room-gateway.py ./
+COPY bookings-gateway.py ./
 
 # create a user that will run the application using docker
 RUN adduser -D manny
