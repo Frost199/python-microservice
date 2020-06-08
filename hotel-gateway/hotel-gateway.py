@@ -58,6 +58,6 @@ class HotelGatewayService:
         :return:
         """
         data = json.loads(request.get_data(as_text=True))
-        room_id = self.rooms_rpc.create(data['room_user'], data['room_id'])
+        room_id = self.rooms_rpc.create(data['room_user'], data['room_number'])
 
         return room_id
